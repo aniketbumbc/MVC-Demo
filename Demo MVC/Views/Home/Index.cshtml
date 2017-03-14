@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Countries List";
+}
+
+<body bgcolor="Red">
+    <h2>List of Countries</h2>
+
+<ul>
+    @foreach (string strname in ViewBag.Coutries)
+
+
+    {
+        <li> @strname </li>
+
+    }
+            
+
+</ul><br />
+    <h2>List of Student</h2>
+    <ul>
+        @foreach(string sstudent in (List<string>)ViewData["Student"])
+        {
+            <li>@sstudent</li>
+        }
+    </ul>
+
+</body>
+

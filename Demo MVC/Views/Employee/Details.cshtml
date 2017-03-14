@@ -1,0 +1,33 @@
+﻿@model Demo_MVC.Models.Employee
+
+@{
+    ViewBag.Title = "Employee Details";
+}
+
+<h2> Employee Details</h2>
+
+<table>
+<tr>
+    <td><b>Id</b> </td>
+    <td>@Model.id</td>
+</tr>
+
+
+    <tr>
+        <td><b>  Name</b></td>
+        <td>@Model.name</td>
+    </tr>
+
+    <tr><td><b>Gender </b></td>
+    <td>@Model.gender</td>
+</tr>
+
+
+    <tr>
+        <td><b>City </b></td>
+        <td>@Model.city</td>
+    </tr>
+
+
+</table>
+@Html.ActionLink("Back to List", "Index")
